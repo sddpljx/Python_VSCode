@@ -1,11 +1,12 @@
 # import module as namespace
-import helper # helper is a namespace
+from helper import display
+import helper  # helper is a namespace
 helper.display('Not a warning')
 
 # import all into current namespace
-from helper import * # helper is a module
-display('bbb')
+# from helper import * # helper is a module
+#display('bbb', True)
 
-# import 
-from helper import helper
-display('ccc')
+# import
+display('bbb', True)
+display('ccc', False)
